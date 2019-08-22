@@ -19,8 +19,10 @@ void moveAgents() {
     if (agents[i].x>width || agents[i].x<0) agents[i].xSpeed=agents[i].xSpeed*-1;
     agents[i].y=agents[i].y+agents[i].ySpeed;
     if (agents[i].y>height || agents[i].y<0) agents[i].ySpeed=agents[i].ySpeed*-1;
-    fill(500,0,0);
+    fill(255,0,0);
     ellipse(agents[i].x, agents[i].y, agents[i].s, agents[i].s);
+    fill(0);
     text(i,agents[i].x, agents[i].y);
+    fill(0);
   }
 }

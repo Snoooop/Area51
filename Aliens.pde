@@ -19,7 +19,9 @@ void moveAliens() {
     if (aliens[i].x<width*5/8 || aliens[i].x>width) aliens[i].xSpeed=aliens[i].xSpeed*-1;
     aliens[i].y=aliens[i].y+aliens[i].ySpeed;
     if (aliens[i].y>height || aliens[i].y<0) aliens[i].ySpeed=aliens[i].ySpeed*-1;
-    fill(0,500,0);
+    fill(0,255,0);
     ellipse(aliens[i].x, aliens[i].y, aliens[i].s, aliens[i].s);
+    fill(0);
+    text(i,aliens[i].x, aliens[i].y);
   }
 }

@@ -21,5 +21,7 @@ void movePeople() {
     if (peoples[i].y>height || peoples[i].y<0) peoples[i].ySpeed=peoples[i].ySpeed*-1;
     fill(0,0,500);
     ellipse(peoples[i].x, peoples[i].y, peoples[i].s, peoples[i].s);
+    fill(0);
+    text(i,peoples[i].x, peoples[i].y);
   }
 }
